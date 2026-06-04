@@ -11,4 +11,18 @@ public class Monkey {
     public Monkey(int lives) {
         this.lives = lives;
     }
+
+    public int getLives() { return lives; }
+    public int getScore() { return score; }
+    public int getCurrentBar() { return currentBar; }
+
+    public void jump() {
+        currentBar++;
+        score += 10;
+    }
+
+    public void hitObstacle() {
+        lives--;
+        score = Math.max(0, score - 5);
+    }
 }
