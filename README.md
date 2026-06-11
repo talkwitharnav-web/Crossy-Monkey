@@ -1,2 +1,1 @@
-# Crossy-Monkey
-Crossy road but bananas!
+# Story mode game!
